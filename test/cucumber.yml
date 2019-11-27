@@ -1,0 +1,18 @@
+#configuração de start de projeto
+
+## YAML Templatesss
+---
+default: -p pretty -p acesso -p chrome -p html -p json
+
+pretty: --format pretty
+ci:  --format progress
+
+acesso: ACESSO=acesso
+#producao:  AMBIENTE=producao
+
+firefox: BROWSER=firefox
+chrome: BROWSER=chrome
+chrome_headless: BROWSER=chrome_headless
+
+html:  --format html --out=results/report.html
+json:  --format json --out=results/report.json
