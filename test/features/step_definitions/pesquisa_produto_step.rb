@@ -1,6 +1,6 @@
 Dado("que eu acesse a plataforma do ecommerce") do
     home_page.load
-    
+    puts "url_default: #{page.current_url}"
   end
   
   Dado("que eu pesquise o produto") do
